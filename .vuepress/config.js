@@ -3,7 +3,7 @@ const {
 } = require('../package')
 
 module.exports = {
-    title: 'Getting Started With ACPI',
+    title: 'Primeiros Passos com a ACPI',
     head: [
         ['meta', {
             name: 'theme-color',
@@ -60,58 +60,58 @@ module.exports = {
 
     themeConfig: {
         lastUpdated: true,
-        repo: 'https://github.com/dortania/Getting-Started-With-ACPI',
+        repo: 'https://github.com/deomkds/Getting-Started-With-ACPI',
         editLinks: true,
-        editLinkText: 'Help us improve this page!',
+        editLinkText: 'Ajude-nos a melhorar esta página!',
         logo: 'homepage.png',
         nav: [{
-            text: 'Dortania Guides',
+            text: 'Outros Guias',
             ariaLabel: 'Language Menu',
             items: [{
-                text: 'Home Site',
+                text: 'Site Original (em inglês)',
                 link: 'https://dortania.github.io/'
             },
             {
-                text: 'OpenCore Install Guide',
-                link: 'https://dortania.github.io/OpenCore-Install-Guide/'
+                text: 'Guia de Instalação do OpenCore',
+                link: 'https://deomkds.github.io/OpenCore-Install-Guide/'
             },
             {
-                text: 'OpenCore Post-Install',
-                link: 'https://dortania.github.io/OpenCore-Post-Install/'
+                text: 'Pós-instalação do OpenCore',
+                link: 'https://deomkds.github.io/OpenCore-Post-Install/'
             },
             {
-                text: 'Wireless Buyers Guide',
-                link: 'https://dortania.github.io/Wireless-Buyers-Guide/'
+                text: 'Guia de Compra de GPUs',
+                link: 'https://deomkds.github.io/GPU-Buyers-Guide/'
             },
             {
-                text: 'GPU Buyers Guide',
-                link: 'https://dortania.github.io/GPU-Buyers-Guide/'
+                text: 'Guia de Compra de Wi-Fi',
+                link: 'https://deomkds.github.io/Wireless-Buyers-Guide/'
             },
             {
-                text: 'Anti Buyers Guide',
-                link: 'https://dortania.github.io/Anti-Hackintosh-Buyers-Guide/'
+                text: 'Guia de Compra Anti-Hackintosh',
+                link: 'https://deomkds.github.io/Anti-Hackintosh-Buyers-Guide/'
             },
             ]
         },
         ],
         sidebar: [{
-            title: 'Introduction',
+            title: 'Introdução',
             collapsable: false,
             sidebarDepth: 1,
             children: [
-                ['', 'Getting Started With ACPI'],
-				['ssdt-platform', 'Choosing the SSDTs'],
+                ['', 'Primeiros Passos com a ACPI'],
+				['ssdt-platform', 'Escolhendo as SSDTs'],
             ]
 
         },
         {
-            title: 'Methods',
+            title: 'Métodos',
             collapsable: false,
             sidebarDepth: 2,
             children: [
                 '/ssdt-methods/ssdt-methods',
 		        {
-		            title: 'Methods',
+		            title: 'Métodos',
 		            collapsable: false,
 		            sidebarDepth: 2,
 		            children: [
@@ -136,35 +136,35 @@ module.exports = {
             collapsable: false,
             sidebarDepth: 1,
             children: [
-                ['/Desktops/desktop-disable', 'Disabling desktop dGPUs'],
+                ['/Desktops/desktop-disable', 'Desativando GPUs Dedicadas'],
             ]
         },
         {
-            title: 'Laptop',
+            title: 'Notebook',
             collapsable: false,
             sidebarDepth: 0,
             children: [
-                ['/Laptops/backlight', 'Fixing Backlight'],
+                ['/Laptops/backlight', 'Consertando a Luz de Fundo'],
 		        {
-					title: 'Methods',
+					title: 'Métodos',
 		            collapsable: true,
 		            sidebarDepth: 2,
 		            children: [
-		                ['/Laptops/backlight-methods/prebuilt', 'Prebuilt'],
+		                ['/Laptops/backlight-methods/prebuilt', 'Pronto'],
 		                ['/Laptops/backlight-methods/manual', 'Manual'],
 		            ]
 		        },
-                ['/Laptops/trackpad', 'Fixing Trackpad'],
+                ['/Laptops/trackpad', 'Consertando o Trackpad'],
 		        {
-					title: 'Methods',
+					title: 'Métodos',
 		            collapsable: true,
 		            sidebarDepth: 2,
 		            children: [
-		                ['/Laptops/trackpad-methods/prebuilt', 'Prebuilt'],
+		                ['/Laptops/trackpad-methods/prebuilt', 'Pronto'],
 		                ['/Laptops/trackpad-methods/manual', 'Manual'],
 		            ]
 		        },
-				['/Laptops/laptop-disable', 'Disabling laptop dGPUs'],
+				['/Laptops/laptop-disable', 'Desativando GPUs Dedicadas'],
             ]
         },
         {
@@ -174,108 +174,108 @@ module.exports = {
             children: [
                 ['/Universal/ec-fix', 'Embedded Controller'],
 		        {
-					title: 'Methods',
+					title: 'Métodos',
 		            collapsable: true,
 		            sidebarDepth: 2,
 		            children: [
-		                ['/Universal/ec-methods/prebuilt', 'Prebuilt'],
+		                ['/Universal/ec-methods/prebuilt', 'Pronto'],
 						['/Universal/ec-methods/ssdttime', 'SSDTTime'],
 		                ['/Universal/ec-methods/manual', 'Manual'],
 		            ]
 		        },
-                ['/Universal/plug', 'CPU Power Management'],
+                ['/Universal/plug', 'Gerenciamento de Energia da CPU'],
 		        {
-					title: 'Methods',
+					title: 'Métodos',
 		            collapsable: true,
 		            sidebarDepth: 2,
 		            children: [
-		                ['/Universal/plug-methods/prebuilt', 'Prebuilt'],
+		                ['/Universal/plug-methods/prebuilt', 'Pronto'],
 						['/Universal/plug-methods/ssdttime', 'SSDTTime'],
 		                ['/Universal/plug-methods/manual', 'Manual'],
 		            ]
 		        },
                 ['/Universal/awac', 'AWAC vs RTC'],
 		        {
-					title: 'Methods',
+					title: 'Métodos',
 		            collapsable: true,
 		            sidebarDepth: 2,
 		            children: [
-		                ['/Universal/awac-methods/prebuilt', 'Prebuilt'],
+		                ['/Universal/awac-methods/prebuilt', 'Pronto'],
 		                ['/Universal/awac-methods/ssdttime', 'SSDTTime'],
 		                ['/Universal/awac-methods/manual', 'Manual'],
-						['/Universal/awac-methods/manual-hedt', 'Manual HEDT'],
+						['/Universal/awac-methods/manual-hedt', 'HEDT Manual'],
 		            ]
 		        },
                 ['/Universal/nvram', 'NVRAM PMC'],
 		        {
-					title: 'Methods',
+					title: 'Métodos',
 		            collapsable: true,
 		            sidebarDepth: 2,
 		            children: [
-		                ['/Universal/nvram-methods/prebuilt', 'Prebuilt'],
+		                ['/Universal/nvram-methods/prebuilt', 'Pronto'],
 		                ['/Universal/nvram-methods/ssdttime', 'SSDTTime'],
 		                ['/Universal/nvram-methods/manual', 'Manual'],
 		            ]
 		        },
                 ['/Universal/rhub', 'USB RHUB'],
 		        {
-					title: 'Methods',
+					title: 'Métodos',
 		            collapsable: true,
 		            sidebarDepth: 2,
 		            children: [
-		                ['/Universal/rhub-methods/prebuilt', 'Prebuilt'],
+		                ['/Universal/rhub-methods/prebuilt', 'Pronto'],
 						['/Universal/rhub-methods/ssdttime', 'SSDTTime'],
 		                ['/Universal/rhub-methods/manual', 'Manual'],
 		            ]
 		        },
                 ['/Universal/imei', 'IMEI'],
 		        {
-					title: 'Methods',
+					title: 'Métodos',
 		            collapsable: true,
 		            sidebarDepth: 2,
 		            children: [
-		                ['/Universal/imei-methods/prebuilt', 'Prebuilt'],
+		                ['/Universal/imei-methods/prebuilt', 'Pronto'],
 		                ['/Universal/imei-methods/manual', 'Manual'],
 		            ]
 		        },
-                ['/Universal/unc0', 'Fixing Uncore Bridge'],
+                ['/Universal/unc0', 'Consertanto o Uncore Bridge'],
 		        {
-					title: 'Methods',
+					title: 'Métodos',
 		            collapsable: true,
 		            sidebarDepth: 2,
 		            children: [
-						['/Universal/unc0-methods/prebuilt', 'Prebuilt'],
+						['/Universal/unc0-methods/prebuilt', 'Pronto'],
 		                ['/Universal/unc0-methods/manual', 'Manual'],
 		            ]
 		        },
-                ['/Universal/smbus', 'Fixing SMBus Support'],
+                ['/Universal/smbus', 'Consertanto o Suporte a SMBus'],
 		        {
-					title: 'Methods',
+					title: 'Métodos',
 		            collapsable: true,
 		            sidebarDepth: 2,
 		            children: [
 		                ['/Universal/smbus-methods/manual', 'Manual'],
 		            ]
 		        },
-                ['/Universal/irq', 'IRQ Fix'],
-				['/Universal/spoof', 'GPU Spoof'],
+                ['/Universal/irq', 'Correção de IRQ'],
+				['/Universal/spoof', 'Spoof de GPU'],
             ]
         },
         {
-            title: 'Cleanup',
+            title: 'Limpeza',
             collapsable: false,
             sidebarDepth: 1,
             children: [
-                ['cleanup', 'Cleanup'],
+                ['cleanup', 'Limpeza'],
             ]
         },
         {
-            title: 'Misc',
+            title: 'Outros',
             collapsable: false,
             sidebarDepth: 1,
             children: [
-                ['troubleshooting', 'Troubleshooting'],
-				['CONTRIBUTING', 'Contributing'],
+                ['troubleshooting', 'Solução de Problemas'],
+				['CONTRIBUTING', 'Contribuindo'],
             ]
         },
     	],
